@@ -1,0 +1,6 @@
+framework module Pods_NYC_JOBS_DATA_FINAL {
+  umbrella header "Pods-NYC_JOBS_DATA_FINAL-umbrella.h"
+
+  export *
+  module * { export * }
+}

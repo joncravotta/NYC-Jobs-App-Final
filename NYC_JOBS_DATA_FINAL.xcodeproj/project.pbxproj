@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6ED0D2B394708973E037D181 /* Pods_NYC_JOBS_DATA_FINAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C6F8CB618381ACE604174A /* Pods_NYC_JOBS_DATA_FINAL.framework */; };
+		8D0A5B0C137739B0E2F4D9C0 /* Pods_NYC_JOBS_DATA_FINALUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F90B04BFE1FB3018DB8014A /* Pods_NYC_JOBS_DATA_FINALUITests.framework */; };
+		D88752C49F875E6B93417068 /* Pods_NYC_JOBS_DATA_FINALTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C45F1BB8776CE1C434D68BAC /* Pods_NYC_JOBS_DATA_FINALTests.framework */; };
 		FC37C34120BCBA4400A000C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC37C34020BCBA4400A000C5 /* AppDelegate.swift */; };
-		FC37C34320BCBA4400A000C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC37C34220BCBA4400A000C5 /* ViewController.swift */; };
 		FC37C34620BCBA4400A000C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC37C34420BCBA4400A000C5 /* Main.storyboard */; };
 		FC37C34920BCBA4400A000C5 /* NYC_JOBS_DATA_FINAL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC37C34720BCBA4400A000C5 /* NYC_JOBS_DATA_FINAL.xcdatamodeld */; };
 		FC37C34B20BCBA4500A000C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC37C34A20BCBA4500A000C5 /* Assets.xcassets */; };
 		FC37C34E20BCBA4500A000C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC37C34C20BCBA4500A000C5 /* LaunchScreen.storyboard */; };
 		FC37C35920BCBA4600A000C5 /* NYC_JOBS_DATA_FINALTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC37C35820BCBA4600A000C5 /* NYC_JOBS_DATA_FINALTests.swift */; };
 		FC37C36420BCBA4600A000C5 /* NYC_JOBS_DATA_FINALUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC37C36320BCBA4600A000C5 /* NYC_JOBS_DATA_FINALUITests.swift */; };
+		FC37C37520BCBB4700A000C5 /* AllJobsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC37C37420BCBB4700A000C5 /* AllJobsViewController.swift */; };
+		FC37C37B20BCBC4F00A000C5 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC37C37A20BCBC4F00A000C5 /* UIViewController.swift */; };
+		FC37C37D20BCBCC500A000C5 /* AllJobsModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC37C37C20BCBCC500A000C5 /* AllJobsModelController.swift */; };
+		FC37C37F20BCBCF000A000C5 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC37C37E20BCBCF000A000C5 /* Job.swift */; };
+		FC37C38320BCBF1200A000C5 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC37C38220BCBF1200A000C5 /* NetworkClient.swift */; };
+		FCB0DF8120BCD16800C707E0 /* AllJobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF8020BCD16800C707E0 /* AllJobsViewModel.swift */; };
+		FCB0DF8420BCD5A000C707E0 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF8320BCD5A000C707E0 /* State.swift */; };
+		FCB0DF8720BE1E6600C707E0 /* JobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF8620BE1E6600C707E0 /* JobTableViewCell.swift */; };
+		FCB0DF8B20BE319600C707E0 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF8A20BE319600C707E0 /* UIColor.swift */; };
+		FCB0DF8D20C37E7C00C707E0 /* JobViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF8C20C37E7C00C707E0 /* JobViewController.swift */; };
+		FCB0DF8F20C3831200C707E0 /* JobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF8E20C3831200C707E0 /* JobViewModel.swift */; };
+		FCB0DF9120C388D900C707E0 /* JobTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF9020C388D900C707E0 /* JobTitleTableViewCell.swift */; };
+		FCB0DF9320C38E2C00C707E0 /* JobDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF9220C38E2C00C707E0 /* JobDetailTableViewCell.swift */; };
+		FCB0DF9820C443E400C707E0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF9720C443E400C707E0 /* String.swift */; };
+		FCB0DF9A20C4452900C707E0 /* MapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB0DF9920C4452900C707E0 /* MapTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1552CA440F92D9835D972E86 /* Pods-NYC_JOBS_DATA_FINAL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC_JOBS_DATA_FINAL.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYC_JOBS_DATA_FINAL/Pods-NYC_JOBS_DATA_FINAL.release.xcconfig"; sourceTree = "<group>"; };
+		3F90B04BFE1FB3018DB8014A /* Pods_NYC_JOBS_DATA_FINALUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYC_JOBS_DATA_FINALUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5158DFC2A9E1BCA6FC135BBF /* Pods-NYC_JOBS_DATA_FINALTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC_JOBS_DATA_FINALTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYC_JOBS_DATA_FINALTests/Pods-NYC_JOBS_DATA_FINALTests.release.xcconfig"; sourceTree = "<group>"; };
+		5513351A97C711B3419824A7 /* Pods-NYC_JOBS_DATA_FINALUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC_JOBS_DATA_FINALUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYC_JOBS_DATA_FINALUITests/Pods-NYC_JOBS_DATA_FINALUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5BC31050851E00B4BD5BA189 /* Pods-NYC_JOBS_DATA_FINAL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC_JOBS_DATA_FINAL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYC_JOBS_DATA_FINAL/Pods-NYC_JOBS_DATA_FINAL.debug.xcconfig"; sourceTree = "<group>"; };
+		8E17863F152C43F3645DCC8A /* Pods-NYC_JOBS_DATA_FINALUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC_JOBS_DATA_FINALUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYC_JOBS_DATA_FINALUITests/Pods-NYC_JOBS_DATA_FINALUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7C6F8CB618381ACE604174A /* Pods_NYC_JOBS_DATA_FINAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYC_JOBS_DATA_FINAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C45F1BB8776CE1C434D68BAC /* Pods_NYC_JOBS_DATA_FINALTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NYC_JOBS_DATA_FINALTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBFA07D4497788BA7422E4DD /* Pods-NYC_JOBS_DATA_FINALTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYC_JOBS_DATA_FINALTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NYC_JOBS_DATA_FINALTests/Pods-NYC_JOBS_DATA_FINALTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FC37C33D20BCBA4400A000C5 /* NYC_JOBS_DATA_FINAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYC_JOBS_DATA_FINAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC37C34020BCBA4400A000C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC37C34220BCBA4400A000C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC37C34520BCBA4400A000C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC37C34820BCBA4400A000C5 /* NYC_JOBS_DATA_FINAL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NYC_JOBS_DATA_FINAL.xcdatamodel; sourceTree = "<group>"; };
 		FC37C34A20BCBA4500A000C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +74,21 @@
 		FC37C35F20BCBA4600A000C5 /* NYC_JOBS_DATA_FINALUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NYC_JOBS_DATA_FINALUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC37C36320BCBA4600A000C5 /* NYC_JOBS_DATA_FINALUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYC_JOBS_DATA_FINALUITests.swift; sourceTree = "<group>"; };
 		FC37C36520BCBA4600A000C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC37C37420BCBB4700A000C5 /* AllJobsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllJobsViewController.swift; sourceTree = "<group>"; };
+		FC37C37A20BCBC4F00A000C5 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		FC37C37C20BCBCC500A000C5 /* AllJobsModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllJobsModelController.swift; sourceTree = "<group>"; };
+		FC37C37E20BCBCF000A000C5 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		FC37C38220BCBF1200A000C5 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		FCB0DF8020BCD16800C707E0 /* AllJobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllJobsViewModel.swift; sourceTree = "<group>"; };
+		FCB0DF8320BCD5A000C707E0 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		FCB0DF8620BE1E6600C707E0 /* JobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTableViewCell.swift; sourceTree = "<group>"; };
+		FCB0DF8A20BE319600C707E0 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		FCB0DF8C20C37E7C00C707E0 /* JobViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewController.swift; sourceTree = "<group>"; };
+		FCB0DF8E20C3831200C707E0 /* JobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewModel.swift; sourceTree = "<group>"; };
+		FCB0DF9020C388D900C707E0 /* JobTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTitleTableViewCell.swift; sourceTree = "<group>"; };
+		FCB0DF9220C38E2C00C707E0 /* JobDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDetailTableViewCell.swift; sourceTree = "<group>"; };
+		FCB0DF9720C443E400C707E0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FCB0DF9920C4452900C707E0 /* MapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED0D2B394708973E037D181 /* Pods_NYC_JOBS_DATA_FINAL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D88752C49F875E6B93417068 /* Pods_NYC_JOBS_DATA_FINALTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +112,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D0A5B0C137739B0E2F4D9C0 /* Pods_NYC_JOBS_DATA_FINALUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE7E82D0E88F1385C517FEF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BC31050851E00B4BD5BA189 /* Pods-NYC_JOBS_DATA_FINAL.debug.xcconfig */,
+				1552CA440F92D9835D972E86 /* Pods-NYC_JOBS_DATA_FINAL.release.xcconfig */,
+				DBFA07D4497788BA7422E4DD /* Pods-NYC_JOBS_DATA_FINALTests.debug.xcconfig */,
+				5158DFC2A9E1BCA6FC135BBF /* Pods-NYC_JOBS_DATA_FINALTests.release.xcconfig */,
+				8E17863F152C43F3645DCC8A /* Pods-NYC_JOBS_DATA_FINALUITests.debug.xcconfig */,
+				5513351A97C711B3419824A7 /* Pods-NYC_JOBS_DATA_FINALUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6D8943CE3C3F2D5CA499DA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7C6F8CB618381ACE604174A /* Pods_NYC_JOBS_DATA_FINAL.framework */,
+				C45F1BB8776CE1C434D68BAC /* Pods_NYC_JOBS_DATA_FINALTests.framework */,
+				3F90B04BFE1FB3018DB8014A /* Pods_NYC_JOBS_DATA_FINALUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC37C33420BCBA4400A000C5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +149,8 @@
 				FC37C35720BCBA4600A000C5 /* NYC_JOBS_DATA_FINALTests */,
 				FC37C36220BCBA4600A000C5 /* NYC_JOBS_DATA_FINALUITests */,
 				FC37C33E20BCBA4400A000C5 /* Products */,
+				EE7E82D0E88F1385C517FEF2 /* Pods */,
+				F6D8943CE3C3F2D5CA499DA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +167,15 @@
 		FC37C33F20BCBA4400A000C5 /* NYC_JOBS_DATA_FINAL */ = {
 			isa = PBXGroup;
 			children = (
+				FCB0DF8520BE1E4E00C707E0 /* Views */,
+				FCB0DF8220BCD59200C707E0 /* Helpers */,
+				FC37C38020BCBEFF00A000C5 /* Network */,
+				FC37C37920BCBC3D00A000C5 /* Extensions */,
+				FC37C37820BCBB7200A000C5 /* View Models */,
+				FC37C37720BCBB6C00A000C5 /* Models */,
+				FC37C37620BCBB6200A000C5 /* Model Controllers */,
+				FC37C37320BCBB2600A000C5 /* View Controllers */,
 				FC37C34020BCBA4400A000C5 /* AppDelegate.swift */,
-				FC37C34220BCBA4400A000C5 /* ViewController.swift */,
 				FC37C34420BCBA4400A000C5 /* Main.storyboard */,
 				FC37C34A20BCBA4500A000C5 /* Assets.xcassets */,
 				FC37C34C20BCBA4500A000C5 /* LaunchScreen.storyboard */,
@@ -128,6 +203,85 @@
 			path = NYC_JOBS_DATA_FINALUITests;
 			sourceTree = "<group>";
 		};
+		FC37C37320BCBB2600A000C5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC37C37420BCBB4700A000C5 /* AllJobsViewController.swift */,
+				FCB0DF8C20C37E7C00C707E0 /* JobViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FC37C37620BCBB6200A000C5 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC37C37C20BCBCC500A000C5 /* AllJobsModelController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		FC37C37720BCBB6C00A000C5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC37C37E20BCBCF000A000C5 /* Job.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC37C37820BCBB7200A000C5 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCB0DF8020BCD16800C707E0 /* AllJobsViewModel.swift */,
+				FCB0DF8E20C3831200C707E0 /* JobViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		FC37C37920BCBC3D00A000C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC37C37A20BCBC4F00A000C5 /* UIViewController.swift */,
+				FCB0DF8A20BE319600C707E0 /* UIColor.swift */,
+				FCB0DF9720C443E400C707E0 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FC37C38020BCBEFF00A000C5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FC37C38220BCBF1200A000C5 /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FCB0DF8220BCD59200C707E0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FCB0DF8320BCD5A000C707E0 /* State.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FCB0DF8520BE1E4E00C707E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FCB0DF8920BE1E7E00C707E0 /* Table View Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FCB0DF8920BE1E7E00C707E0 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FCB0DF8620BE1E6600C707E0 /* JobTableViewCell.swift */,
+				FCB0DF9020C388D900C707E0 /* JobTitleTableViewCell.swift */,
+				FCB0DF9220C38E2C00C707E0 /* JobDetailTableViewCell.swift */,
+				FCB0DF9920C4452900C707E0 /* MapTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +289,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC37C36820BCBA4600A000C5 /* Build configuration list for PBXNativeTarget "NYC_JOBS_DATA_FINAL" */;
 			buildPhases = (
+				22535F3C5A6C9C05A7E95CA6 /* [CP] Check Pods Manifest.lock */,
 				FC37C33920BCBA4400A000C5 /* Sources */,
 				FC37C33A20BCBA4400A000C5 /* Frameworks */,
 				FC37C33B20BCBA4400A000C5 /* Resources */,
+				55C865E0697B923A05BF0671 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +308,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC37C36B20BCBA4600A000C5 /* Build configuration list for PBXNativeTarget "NYC_JOBS_DATA_FINALTests" */;
 			buildPhases = (
+				1DBFBDB5D168EA3E361EB52C /* [CP] Check Pods Manifest.lock */,
 				FC37C35020BCBA4600A000C5 /* Sources */,
 				FC37C35120BCBA4600A000C5 /* Frameworks */,
 				FC37C35220BCBA4600A000C5 /* Resources */,
@@ -170,6 +327,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC37C36E20BCBA4600A000C5 /* Build configuration list for PBXNativeTarget "NYC_JOBS_DATA_FINALUITests" */;
 			buildPhases = (
+				C44BE2E9E6E6D46DCDFF4DC4 /* [CP] Check Pods Manifest.lock */,
 				FC37C35B20BCBA4600A000C5 /* Sources */,
 				FC37C35C20BCBA4600A000C5 /* Frameworks */,
 				FC37C35D20BCBA4600A000C5 /* Resources */,
@@ -254,14 +412,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DBFBDB5D168EA3E361EB52C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYC_JOBS_DATA_FINALTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22535F3C5A6C9C05A7E95CA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYC_JOBS_DATA_FINAL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55C865E0697B923A05BF0671 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NYC_JOBS_DATA_FINAL/Pods-NYC_JOBS_DATA_FINAL-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NYC_JOBS_DATA_FINAL/Pods-NYC_JOBS_DATA_FINAL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C44BE2E9E6E6D46DCDFF4DC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NYC_JOBS_DATA_FINALUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC37C33920BCBA4400A000C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB0DF9A20C4452900C707E0 /* MapTableViewCell.swift in Sources */,
+				FCB0DF8120BCD16800C707E0 /* AllJobsViewModel.swift in Sources */,
+				FC37C37520BCBB4700A000C5 /* AllJobsViewController.swift in Sources */,
+				FC37C37F20BCBCF000A000C5 /* Job.swift in Sources */,
 				FC37C34920BCBA4400A000C5 /* NYC_JOBS_DATA_FINAL.xcdatamodeld in Sources */,
-				FC37C34320BCBA4400A000C5 /* ViewController.swift in Sources */,
+				FC37C37D20BCBCC500A000C5 /* AllJobsModelController.swift in Sources */,
+				FCB0DF8420BCD5A000C707E0 /* State.swift in Sources */,
+				FC37C38320BCBF1200A000C5 /* NetworkClient.swift in Sources */,
+				FCB0DF8B20BE319600C707E0 /* UIColor.swift in Sources */,
+				FCB0DF8F20C3831200C707E0 /* JobViewModel.swift in Sources */,
+				FCB0DF9320C38E2C00C707E0 /* JobDetailTableViewCell.swift in Sources */,
+				FCB0DF8D20C37E7C00C707E0 /* JobViewController.swift in Sources */,
+				FCB0DF9120C388D900C707E0 /* JobTitleTableViewCell.swift in Sources */,
+				FC37C37B20BCBC4F00A000C5 /* UIViewController.swift in Sources */,
 				FC37C34120BCBA4400A000C5 /* AppDelegate.swift in Sources */,
+				FCB0DF9820C443E400C707E0 /* String.swift in Sources */,
+				FCB0DF8720BE1E6600C707E0 /* JobTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +683,7 @@
 		};
 		FC37C36920BCBA4600A000C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BC31050851E00B4BD5BA189 /* Pods-NYC_JOBS_DATA_FINAL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +702,7 @@
 		};
 		FC37C36A20BCBA4600A000C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1552CA440F92D9835D972E86 /* Pods-NYC_JOBS_DATA_FINAL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +721,7 @@
 		};
 		FC37C36C20BCBA4600A000C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBFA07D4497788BA7422E4DD /* Pods-NYC_JOBS_DATA_FINALTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +743,7 @@
 		};
 		FC37C36D20BCBA4600A000C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5158DFC2A9E1BCA6FC135BBF /* Pods-NYC_JOBS_DATA_FINALTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +765,7 @@
 		};
 		FC37C36F20BCBA4600A000C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E17863F152C43F3645DCC8A /* Pods-NYC_JOBS_DATA_FINALUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +786,7 @@
 		};
 		FC37C37020BCBA4600A000C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5513351A97C711B3419824A7 /* Pods-NYC_JOBS_DATA_FINALUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

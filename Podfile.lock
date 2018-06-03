@@ -1,0 +1,24 @@
+PODS:
+  - ReactiveSwift (3.1.0):
+    - Result (~> 3.2)
+  - Result (3.2.4)
+  - SnapKit (4.0.0)
+
+DEPENDENCIES:
+  - ReactiveSwift (~> 3.0)
+  - SnapKit (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - ReactiveSwift
+    - Result
+    - SnapKit
+
+SPEC CHECKSUMS:
+  ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+
+PODFILE CHECKSUM: b71a2d4664c0400c8bb4c2718ddb54d0f3eeb181
+
+COCOAPODS: 1.5.0
