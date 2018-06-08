@@ -39,4 +39,8 @@ final class AllJobsViewModel {
             }
         }
     }
+    
+    func refreshData(withSearchTerm term: String) {
+        jobsModelController.refreshData(withSearchTerm: term)
+    }
 }

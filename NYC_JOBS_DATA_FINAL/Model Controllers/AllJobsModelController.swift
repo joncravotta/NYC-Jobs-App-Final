@@ -1,5 +1,5 @@
 //
-//  JobsModelController.swift
+//  AllJobsModelController.swift
 //  NYC_JOBS_DATA_FINAL
 //
 //  Created by Jonathan Cravotta on 5/28/18.
@@ -18,8 +18,15 @@ class AllJobsModelController {
         state = MutableProperty(.initial)
     }
     
-    func refreshData() {
-        let url = URL(string: "https://data.cityofnewyork.us/resource/swhp-yxa4.json")!
+    func refreshData(withSearchTerm term: String? = nil) {
+        
+        var urlString = "https://data.cityofnewyork.us/resource/swhp-yxa4.json"
+        
+        if let term = term {
+            urlString = urlString + "?$q=\(term)".addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
+        }
+        
+        let url = URL(string: urlString)!
         
         state.value = .updating
         
@@ -31,10 +38,12 @@ class AllJobsModelController {
             case .success(let data):
                 
                 do {
+                    
                     let decodedData = try JSONDecoder().decode([Job].self, from: data)
                     self.data = decodedData
                     self.state.value = .didUpdate(decodedData)
                 } catch let error {
+                    
                     print(error.localizedDescription)
                     self.state.value = .didFailToUpdate
                 }

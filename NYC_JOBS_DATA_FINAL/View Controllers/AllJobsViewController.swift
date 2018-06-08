@@ -14,6 +14,7 @@ class AllJobsViewController: UIViewController {
     
     private let jobsViewModel: AllJobsViewModel
     private let tableView = UITableView()
+    private let searchController = UISearchController(searchResultsController: nil)
     
     
     init() {
@@ -50,6 +51,15 @@ class AllJobsViewController: UIViewController {
         tableView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        
+        // Search Bar set up
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Jobs..."
+        searchController.searchBar.delegate = self
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        
     }
     
     private func setUpObservers() {
@@ -100,5 +110,23 @@ extension AllJobsViewController: UITableViewDelegate {
         let vc = JobViewController(jobViewModel: vm)
         
         navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension AllJobsViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        print(searchController.searchBar.text)
+    }
+}
+
+extension AllJobsViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if let searchTerm = searchBar.text {
+            jobsViewModel.refreshData(withSearchTerm: searchTerm)
+        }
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        
     }
 }

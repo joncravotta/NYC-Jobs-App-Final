@@ -14,6 +14,7 @@ enum NetworkResponse {
 }
 
 struct NetworkClient {
+    
     static func get(with url: URL, completion: @escaping ((NetworkResponse) -> Void)) {
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else {
